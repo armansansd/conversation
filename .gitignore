@@ -2,6 +2,10 @@
 
 ..
 
-data/*
+data/*.jpg
+data/*.png
+data/*.tiff
+data/*.json
+data/*.gif
 
 config.php
