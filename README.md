@@ -18,9 +18,14 @@ A **conversation** is a set of documents linked under a timestamp (which are sto
 ```
 +---/index.php
 +---/assets/
-|   ----function.js
-|   ----push_json.php   
-|   ----scandir.php
+|   +---/js/	
+|		+----conversation.js
+|		+----function.js
+|		+----jquery.js
+|   +---/css/
+|		+----index.css
+|   ----conv_push_json.php   
+|   ----conv_scan_data_dir.php
 +---/data
 ```
 
