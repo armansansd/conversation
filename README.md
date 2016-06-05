@@ -30,11 +30,13 @@ A **conversation** is a set of documents linked under a timestamp (which are sto
 ```
 
 * **index.php** : retrieve and display files uploaded in the data folder.
-* **function.js** :
+* **conversation.js** :
   * click on an image to show files related to the object clicked
   * edit mode, allow the user to link files together
-* **push_json.php** : used by function.js, it pushes the new conversation timestamp into *filename_info.json*
-* **scandir.php** : scan the data directory to produce .json files attached to each content if missing. It is launched each time the user opens the edit mode.
+* **function.js** :  
+  * some very praticle functions
+* **conv_push_json.php** : used by function.js, it pushes the new conversation timestamp into *filename_info.json*
+* **conv_scan_data_dir.php** : scan the data directory to produce .json files attached to each content if missing. It is launched each time the user opens the edit mode.
 
 ---
 
