@@ -2,8 +2,7 @@
 
 <?php
   require("header.php");
-  //div content
-        ?>
+?>
         <div id="hideShowName" onclick="hideShowName()">display names</div>
 
         <?php
@@ -11,8 +10,8 @@
 
 
   $dir = 	opendir(dirname(realpath(__FILE__))."/data");
-  $txt_ext = ["txt"];
-  $img_ext = ["jpg", "gif", "png"];
+  $txt_ext = ["txt","md"];
+  $img_ext = ["jpg", "gif", "png","svg"];
   $files_info = "";
   $nb_file = scandir(dirname(realpath(__FILE__))."/data");
   foreach($nb_file as $index=>$value) {
@@ -31,10 +30,11 @@
         if(file_exists($json_path) != false){
           $f_json = json_decode(file_get_contents($json_path),true);
           $c = $f_json['conversation'];
+          //print_r($c);
           $c_string = implode(",", $c);
           echo "<a data-conversation='".$c_string."'>
           <h3>".$file."</h3>
-          <img id='grid_thumb' src='data/".$file."'>
+          <img id='grid_thumb' src='".URL."/data/".$file."'>
 
           </a>";
         }else{

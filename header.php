@@ -3,7 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>conversation</title>
+    <link rel="stylesheet" href="../assets/css/index.css" media="screen">
     <link rel="stylesheet" href="assets/css/index.css" media="screen">
+
+    <script src="../assets/js/jquery.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.js" type="text/javascript"></script>
+    <!-- <script type="text/javascript" src="assets/js/conv_fct.js"></script> -->
+    <script type="text/javascript" src="../assets/js/function.js"></script>
+    <script type="text/javascript" src="assets/js/function.js"></script>
+
+    <script type="text/javascript" src="../assets/js/conversation.js"></script>
+    <script type="text/javascript" src="assets/js/conversation.js"></script>
   </head>
   <body>
     <div class="editActive">
@@ -102,5 +112,5 @@
             inkscape:connector-curvature="0" />
        </g>
      </svg>
-</div>
+    </div>
 <!-- fin pictogramme -->

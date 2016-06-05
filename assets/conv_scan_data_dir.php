@@ -1,5 +1,7 @@
+
 <?php
-  $dir = 	opendir(dirname(dirname(realpath(__FILE__)))."/data");
+  require('../config.php');
+  $dir = 	opendir(LOCAL_PATH."/data");
   $files_info = [];
   $files = [];
     while($file = readdir($dir)){
@@ -19,7 +21,7 @@
     $m_info = array_diff($files, $files_info);
     if(count($m_info) != null){
       foreach ($m_info as $file){
-        $file_json = dirname(dirname(realpath(__FILE__)))."/data/".$file."_info.json";
+        $file_json = LOCAL_PATH."/data/".$file."_info.json";
         $arr_info =  array(
     			'title' => $file,
     			'conversation' => []
@@ -28,5 +30,5 @@
       }
       print(true);
     }else{
-      print(true);
+      print(false);
     }
