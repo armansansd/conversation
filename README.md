@@ -2,17 +2,18 @@
 
 _Conversation_ is a prototype of a content management system focused on time.  
 This prototype is an application of ideas developed through  _Timing_ , _Timing_ was a concept of a file manager where one can explore and wander through the activity of their computer. You can find more information [here](http://armansansd.net/?title=20150713-timing).
-This system is also used for my blog about the representation of time in technology [aux](http://aux.armansansd.net).
-
-#### How to
-
-to use this first version of Conversation, you simply extract the folder into your server and add content to the folder "/data". You might need a little workaround for the permission.
-To open the edit mode : click on the icon
 
 #### Process & architecture
 
 I would like to develop this tool to propose a different way to produce articles, link content and browse it, mostly time oriented.  
-A **conversation** is a set of documents linked under a timestamp (which are stored in a json file and pushed into a data attribute).
+A **conversation** is a set of documents linked under a timestamp (which are stored in a json file and pushed into a data attribute).    
+When the user select one content of its library, all the other related (linked) media are displayed. 
+
+#### How to
+
+to use this first version of Conversation, you simply extract the folder into your server and add content to the folder "/data". You might need a little workaround for the permission.
+To open the edit mode : click on the icon   
+This prototype only work with images.  
 
 
 ```
