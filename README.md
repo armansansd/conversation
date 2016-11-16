@@ -1,8 +1,8 @@
 ## Conversation
 
-_Conversation_ is a prototype of a content management system focused on time.  
+_Conversation_ is a prototype of a content management system focused on time and tag.  
 This prototype is an application of ideas developed through  _Timing_ , _Timing_ was a concept of a file manager where one can explore and wander through the activity of their computer. You can find more information [here](http://armansansd.net/?title=20150713-timing).
-This system is also used for my blog about the representation of time in technology [aux](http://aux.armansansd.net).
+
 
 #### How to
 
@@ -40,20 +40,24 @@ A **conversation** is a set of documents linked under a timestamp (which are sto
 
 ---
 
-A number of functions need to be added :
+
+to do :
 
 * Timeline
 * text, video and link implementation
+* add-on for web-browser
 * content upload system
-* visualisation of the links between content
 * erasing content and/or conversations
 * create an admin mode
 
-#### About the timeline
-
-To allow the user to browse articles/conversation, he can either click on a file that he likes and that may be linked to others or a timeline is available to visualise all the conversations that have been created.
-
-![timeline](http://armansansd.net/image_stock/conv_timeline.png)
-
 ---
 note : as I learn by doing, the entire javascript code needs to be rewritten in order to be more clear and sustainable.
+
+---
+
+
+####branch "hoover"  
+
+Tool to sniff and grab content that you want from the web.
+-> focus on gathering content from the web. 
+
