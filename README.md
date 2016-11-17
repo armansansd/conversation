@@ -63,8 +63,7 @@ note : as I learn by doing, the entire javascript code needs to be rewritten in 
 ---
 
 
-####branch "hoover"  
+####branch "marklet"  
 
-Tool to sniff and grab content that you want from the web.
--> focus on gathering content from the web. 
+Marklet for gathering content
 
