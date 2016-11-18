@@ -1,32 +1,41 @@
 (function(){
+
 	var markletFrame;
 	var markletDiv;
 	var markletStyle;
 	if (!document.getElementById("conversation")) {
-		start()
+    //use jquery??
+    // var script = document.createElement('script');
+    // script.src = 'http://code.jquery.com/jquery-1.11.0.min.js';
+    // script.type = 'text/javascript';
+    // document.body.appendChild(script);
+		
+    start();
 	}
 	function start(){
 		createFrame();
 		createTarget();
     createStyle();
+    MetadataObj();
 	}
-	function getURL(msg){
-    url = "http://localhost/conversation/plugin/toolkit.html";
+	// function getURL(msg){
+ //    url = "http://localhost/conversation/plugin/toolkit.html";
 
-    // url = baseUrl + encodeURIComponent(msg.url);
-    // url += "?original_source_url=" + encodeURIComponent(msg.url);
-    // url += "&original_source_title=" + encodeURIComponent(msg.title);
+ //    // url = baseUrl + encodeURIComponent(msg.url);
+ //    // url += "?original_source_url=" + encodeURIComponent(msg.url);
+ //    // url += "&original_source_title=" + encodeURIComponent(msg.title);
 
-    return url;
-  };
+ //    return url;
+ //  };
 
 	function createFrame(){
     markletFrame = document.createElement("iframe");
     markletFrame.name = markletFrame.id = "toolkit_frame";
-    markletFrame.src = getURL({
-      url: window.location.href,
-      title: window.document.title
-    });
+    // markletFrame.src = getURL({
+    //   url: window.location.href,
+    //   title: window.document.title
+    // });
+    markletFrame.src = "http://localhost/conversation/marklet/toolkit.php";
     document.body.appendChild(markletFrame)
   }
 
@@ -48,5 +57,16 @@
     }
     document.body.appendChild(markletStyle);
   }
+  function  MetadataObj(){
+    var url = window.location.href;
+    var timestamp= new Date().getTime();;
+    
+    var metadata = new Object();
+    metadata.url = url;
+    metadata.timestamp = timestamp;
+
+    console.log(metadata);
+  }
+
 })();
 
